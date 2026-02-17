@@ -108,7 +108,19 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4" onClick={() => setIsOpen(false)} href="#contact" variant="liquid">
+              <Button 
+                className="w-full mt-4" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsOpen(false);
+                  const contactSection = document.querySelector("#contact");
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }} 
+                href="#contact" 
+                variant="liquid"
+              >
                 Hire Me
               </Button>
             </div>
