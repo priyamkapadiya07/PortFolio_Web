@@ -4,6 +4,8 @@ A high-performance, responsive personal portfolio website featuring a premium "L
 
 ![Portfolio Preview](/app/icon.svg)
 
+[**Live Demo**](https://priyamportfolio-brown.vercel.app)
+
 ## 🚀 Features
 
 - **Liquid UI Design**: Custom "liquid" buttons with elastic hover effects and deep gradients.
