@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Liquid Dark Portfolio
 
-## Getting Started
+A high-performance, responsive personal portfolio website featuring a premium "Liquid Dark" aesthetic, glassmorphism effects, and smooth physics-based animations.
 
-First, run the development server:
+![Portfolio Preview](/app/icon.svg)
+
+## 🚀 Features
+
+- **Liquid UI Design**: Custom "liquid" buttons with elastic hover effects and deep gradients.
+- **Glassmorphism**: Frosted glass cards and dock-style navigation for a modern feel.
+- **Responsive Layout**: Fully adaptive design that looks great on mobile, tablet, and desktop.
+- **Interactive Elements**:
+  - **Hero Section**: Immersive entrance with glowing background orbs.
+  - **Navbar**: "Glass Dock" style navigation with sliding hover effects.
+  - **Contact Form**: Functional SMTP email integration via Nodemailer.
+- **Performance Optimized**: Built with Next.js App Router and server-side rendering.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Email**: [Nodemailer](https://nodemailer.com/)
+
+## 📦 Getting Started
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/portfolio.git
+    cd portfolio
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Configure Environment Variables**:
+    Create a `.env.local` file in the root directory and add your email credentials (required for the contact form):
+
+    ```env
+    EMAIL_USER=your-email@gmail.com
+    EMAIL_PASS=your-google-app-password
+    ```
+
+4.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+## 🚀 Deployment (Vercel)
+
+This project is optimized for deployment on [Vercel](https://vercel.com).
+
+1.  Push your code to a GitHub repository.
+2.  Import the project into Vercel.
+3.  **IMPORTANT**: Add your `EMAIL_USER` and `EMAIL_PASS` in the **Environment Variables** section of the Vercel project settings.
+4.  Click **Deploy**.
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+├── app/                  # Next.js App Router pages and layouts
+│   ├── api/              # API routes (e.g., /api/contact)
+│   ├── layout.tsx        # Global layout and font configuration
+│   └── page.tsx          # Main entry page
+├── components/           # Reusable UI components
+│   ├── layout/           # Navbar, Footer
+│   ├── sections/         # Hero, About, Skills, Projects, Contact
+│   └── ui/               # Primitive components (Button, GlassCard)
+├── lib/                  # Utility functions (cn, animations)
+└── public/               # Static assets (images, resume)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📄 License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the [MIT License](LICENSE).
