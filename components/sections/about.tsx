@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Section } from "@/components/ui/section";
 import { GlassCard } from "@/components/ui/glass-card";
 import { Button } from "@/components/ui/button";
+import { Counter } from "@/components/ui/counter";
 
 export function About() {
   return (
@@ -39,9 +40,11 @@ export function About() {
                 </p>
             </div>
             
-            <div className="grid grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
                 <div>
-                    <h3 className="text-3xl font-bold text-white mb-1">15+</h3>
+                    <h3 className="text-3xl font-bold text-white mb-1 flex items-center">
+                      <Counter value={15} />+
+                    </h3>
                     <p className="text-sm text-muted-foreground">Repositories</p>
                 </div>
                 <div>
