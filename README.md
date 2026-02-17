@@ -2,8 +2,6 @@
 
 A high-performance, responsive personal portfolio website featuring a premium "Liquid Dark" aesthetic, glassmorphism effects, and smooth physics-based animations.
 
-![Portfolio Preview](/app/icon.svg)
-
 [**Live Demo**](https://priyamportfolio-brown.vercel.app)
 
 ## 🚀 Features
